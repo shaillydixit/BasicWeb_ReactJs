@@ -7,6 +7,7 @@ import About from './components/about';
 import Blog from './components/blog';
 import Contact from './components/contact';
 import App from './App';
+import Post from './components/writepost';
 
 export default class header extends Component{
 render(){
@@ -43,6 +44,8 @@ return(
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/' element={<App/>}/>
+    <Route path='/post' element={<Post/>}/>
+
   </Routes>
   </Router>
 
