@@ -1,13 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends React.Component{
-  render(){
-    return(
-      <div className="App">
-        <h1>Hello</h1>
-      </div>
-    )
-  }
+// state hook class to functional compo
+export const App = () => {
+  const [count, increaseCount] = useState(9)
+  return(
+    <div>
+      <h1>Functional component {count}</h1>
+      <button onClick={(e)=>{{increaseCount(count+3)}}}>Click Me </button>
+    </div>
+  )
 }
 export default App;
